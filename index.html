@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizador Semanal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>📅 Organizador Semanal</h1>
+
+    <!-- Seleção de dia -->
+    <div class="input-group">
+      <select id="day-select">
+        <option value="Segunda">Segunda</option>
+        <option value="Terça">Terça</option>
+        <option value="Quarta">Quarta</option>
+        <option value="Quinta">Quinta</option>
+        <option value="Sexta">Sexta</option>
+        <option value="Sábado">Sábado</option>
+        <option value="Domingo">Domingo</option>
+      </select>
+      <input type="text" id="task-input" placeholder="Digite uma tarefa...">
+      <button id="add-task">➕</button>
+    </div>
+
+    <!-- Contêiner dos dias da semana -->
+    <div id="week-container" class="week">
+      <!-- Os dias serão preenchidos dinamicamente -->
+    </div>
+
+    <!-- Botão limpar -->
+    <button id="clear-tasks" class="clear-btn">Limpar Semana</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
