@@ -1,0 +1,156 @@
+/* style.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #8d8de4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* App container */
+.app {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 900px;
+  max-width: 95%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+select, input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+select:focus, input:focus {
+  border-color: #6366f1;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Botão adicionar */
+#add-task {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+#add-task:hover {
+  background: #4338ca;
+}
+
+/* Dias da semana */
+.week {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.day {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.day h2 {
+  margin-bottom: 10px;
+  color: #111827;
+  font-size: 18px;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+li {
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Botões de ação */
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.actions .edit {
+  color: #4f46e5;
+}
+
+.actions .delete {
+  color: #dc2626;
+}
+
+/* Botão limpar */
+.clear-btn {
+  margin-top: 20px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.clear-btn:hover {
+  background: #3212be;
+}
+
